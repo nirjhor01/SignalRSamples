@@ -1,8 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div class="container">
+    <div class="row">
+        <div class="col-3"> Toatal Views: </div>
+        <div class="col-4">
+            <span id="totalViewsCounter">0</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"> Toatal Users: </div>
+        <div class="col-4">
+            <span id="totalUsersCounter">0</span>
+        </div>
+    </div>
 </div>
+<script src="~/js/signalr.js"></script>
+<script src="~/js/UserCount.js"></script> 
